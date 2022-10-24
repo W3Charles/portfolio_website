@@ -1,5 +1,6 @@
 import React from 'react'
-import {motion, MotionConfig} from 'framer-motion';
+import {motion} from 'framer-motion';
+/*import {motion, MotionConfig} from 'framer-motion';*/
 
 import {images} from '../../constants';
 import './Header.scss';
@@ -17,13 +18,13 @@ const scaleVariants = {
 
 const Header = () => {
   return (
-    <div className = "app__header app__flex" >
+    <div id="home" className="app__header app__flex" >
       <motion.div
-        whileInView = {{x: [-100, 0], opacity: [0,1]}}
-        transition = {{duration: 0.5}}
-        className = "app__header-info"
+        whileInView={{x: [-100, 0], opacity: [0,1]}}
+        transition={{duration: 0.5}}
+        className="app__header-info"
       >
-        <div className = "app__header-badge">
+        <div className="app__header-badge">
           <div className="badge-cmp app__flex">
             <span> 👋 </span>
             <div style={{marginLeft: 20}}>
@@ -40,14 +41,15 @@ const Header = () => {
       </motion.div>
 
       <motion.div
-        whileInView = {{opacity: [0,1]}}
-        transition = {{duration: 0.5, delayChildren: 0.5}}
-        className = "app__header-img"
+        whileInView={{opacity: [0,1]}}
+        transition={{duration: 0.5, delayChildren: 0.5}}
+        className="app__header-img"
       >
-        <img src={images.profile} alt="profile_bg"/>    
+        <img src={images.profile} alt="profile_bg" />
+
         <motion.img
-          whileInView = {{scale: [0,1]}}
-          transition = {{duration: 1, ease: 'easeInOut'}}
+          whileInView={{scale: [0,1]}}
+          transition={{duration: 1, ease: 'easeInOut'}}
           src={images.circle}
           alt="profile_circle"
           className="overlay_circle"
@@ -55,15 +57,17 @@ const Header = () => {
       </motion.div>
 
       <motion.div
-        variant = {scaleVariants}
-        whileInView = {scaleVariants.whileInView}
-        className = "app__header-circles"
+        variant={scaleVariants}
+        animate={scaleVariants.animate}
+        /*whileInView={scaleVariants.whileInView}*/
+        /*whileInView="onscreen"*/
+        className="app__header-circles"
       >
         {[images.flutter, images.redux, images.sass].map((circle, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
-            <img src={circle} alt="circle"/>
+            <img src={circle} alt="circle" />
           </div>
-        ))} 
+        ))}
       </motion.div>
 
     </div>
