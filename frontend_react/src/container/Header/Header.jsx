@@ -58,9 +58,9 @@ const Header = () => {
 
       <motion.div
         variant={scaleVariants}
-        animate={scaleVariants.animate}
         /*whileInView={scaleVariants.whileInView}*/
         /*whileInView="onscreen"*/
+        animate={scaleVariants.animate}
         className="app__header-circles"
       >
         {[images.flutter, images.redux, images.sass].map((circle, index) => (
