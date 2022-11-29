@@ -8,6 +8,7 @@ export const client = sanityClient({
     apiVersion: '2022-08-31',
     useCdn: true,
     token: process.env.REACT_APP_SANITY_TOKEN,
+    ignoreBrowserTokenWarning: true
 });
 
 //standard code whenever you working with images using SANITY
