@@ -1,16 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import  { AppWrap } from '../../wrapper'
+import  { AppWrap, MotionWrap } from '../../wrapper'
 
 import './About.scss';
 import { urlFor, client } from '../../client';
-
-/*const abouts = [
-  {title: 'Web Development', description: 'I am a good web developer.', imgUrl: images.about01},
-  {title: 'Front End', description: 'I am a good web developer.', imgUrl: images.about02},
-  {title: 'Back End', description: 'I am a good web developer.', imgUrl: images.about03},
-  {title: 'Web Animations', description: 'I am a good web developer.', imgUrl: images.about04},
-];*/
 
 const About = () => {
   /* Create useState field (useStateSnippet) */
