@@ -29,7 +29,16 @@ const Testimonial = () => {
   }, [])
 
   return (
-    <div>Testimonial</div>
+    <>
+      {/* dynamic code block to check if testimonials exist */}
+      {testimonials.length && (
+        <>
+          <div className="app__testimonial-item app__flex">
+            <img src={urlFor(testimonials[currentIndex].imgurl)} alt="testimonial"/>
+          </div>
+        </>
+      )}
+    </>
   )
 }
 
