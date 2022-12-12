@@ -16,12 +16,13 @@ export default {
         },
 
         {
-            name: 'imageurl',
-            title: 'imgURL',
+            name:'imgurl',
+            title:'ImgUrl',
             type: 'image',
+            /*imgurl: 'imgUrl',*/
             options: {
-                hotspot: true,
-            }
+              hotspot: true,
+            },
         },
         
         {
