@@ -19,7 +19,6 @@ export default {
             name:'imgurl',
             title:'ImgUrl',
             type: 'image',
-            /*imgurl: 'imgUrl',*/
             options: {
               hotspot: true,
             },
