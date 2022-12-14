@@ -104,6 +104,16 @@
               color: var(--white-color);
             }
         }
+
+        @media screen and (min-width: 2000px) {
+            width: 100px;
+            height: 100px;
+      
+            svg {
+              width: 45px;
+              height: 45px;
+            }
+        }
     }
 }
 
