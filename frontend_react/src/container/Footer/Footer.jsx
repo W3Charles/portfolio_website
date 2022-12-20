@@ -34,7 +34,6 @@ const Footer = () => {
         setLoading(false);
         setIsFormSubmitted(true);
       })
-      /*.catch((err) => console.log(err));*/
   };
 
   return (
@@ -55,7 +54,7 @@ const Footer = () => {
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
           <div className="app__flex">
-            <input className="p-text" type="text" placeholder="Your Name" name="name" value={username} onChange={handleChangeInput} />
+            <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
           </div>
           <div className="app__flex">
             <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
