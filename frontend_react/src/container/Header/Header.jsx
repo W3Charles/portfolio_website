@@ -34,8 +34,8 @@ const Header = () => {
           </div>
 
           <div className="tag-cmp app__flex">
+            <p className="p-text">Kick-ass Full Stack</p>
             <p className="p-text">Web3 Developer</p>
-            <p className="p-text">Full Stack</p>
           </div>
         </div>
       </motion.div>
@@ -63,7 +63,7 @@ const Header = () => {
         animate={scaleVariants.animate}
         className="app__header-circles"
       >
-        {[images.flutter, images.redux, images.sass].map((circle, index) => (
+        {[images.html, images.react, images.solidity].map((circle, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
             <img src={circle} alt="circle" />
           </div>

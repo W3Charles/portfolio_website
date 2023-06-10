@@ -15,6 +15,7 @@ import python from '../assets/python.png';
 import react from '../assets/react.png';
 import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
+import solidity from '../assets/solidity.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
 
@@ -53,6 +54,7 @@ import spotify from '../assets/spotify.png';
   react,
   redux,
   sass,
+  solidity,
   typescript,
   vue,
   about01,
@@ -89,6 +91,7 @@ const IMAGES = {
   react,
   redux,
   sass,
+  solidity,
   typescript,
   vue,
   about01,
