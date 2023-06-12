@@ -38,7 +38,7 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text"> Take a coffee & chat with me </h2>
+      <h2 className="head-text"> Contact me. Let's talk </h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card">
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel: +1 (123) 456-789" className="p-text">+1 (123) 456-7890</a>
+          <a href="tel: +1 (123) 456-789" className="p-text">+1 (443) 377-3719</a>
         </div>
       </div>
 
