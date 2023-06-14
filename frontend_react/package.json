@@ -40,6 +40,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "eslint": "^8.41.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-import": "^2.25.2",
